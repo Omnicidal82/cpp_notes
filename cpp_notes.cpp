@@ -8,7 +8,8 @@ Variables: variable_name
 Function: functionName
 Constant: CONSTANT_NAME
 Class: ClassName
-Method: methodName
+Method (Class function): methodName
+Private Class variables: _variable_name
 File: file_name.cpp
 
 Escape characters
