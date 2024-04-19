@@ -136,6 +136,7 @@ int main() {
 
 	std::cout << "This is a simple message 1" << std::endl;
 
+    return 0;
 }
 
 /*
@@ -154,6 +155,7 @@ int main() {
 	std::string message = "This is a simple message 2";
 	std::cout << message << std::endl;
 
+    return 0;
 }
 
 /*
@@ -173,6 +175,7 @@ int main() {
 	message = "This is another simple message 3";
 	std::cout << message << std::endl;
 
+    return 0;
 }
 
 /*
@@ -192,6 +195,7 @@ int main() {
 	std::string name = "Example Name";
 	std::cout << "Hello " << name << ", this is your message" << std::endl;
 
+    return 0;
 }
 
 /*
@@ -206,8 +210,10 @@ Hello example name, this is your message
 int main() {
 
 	std::string name = "Example Name";
-	std::cout << name << " once said \"I wish I was better at coding\"" << std::endl;
+	std::cout << name << " once said \"I wish I was better at coding\""
+    << std::endl;
 
+    return 0;
 }
 
 /*
@@ -226,6 +232,7 @@ int main() {
 	std::string message = "The great " + name + " once said \"" + quote + "\"";
 	std::cout << message << std::endl;
 
+    return 0;
 }
 
 /*
@@ -244,6 +251,7 @@ int main() {
 
 	std::cout << 5'000'000 << std::endl;
 
+    return 0;
 }
 
 /*
@@ -265,6 +273,7 @@ int main() {
 	//For exponentiation use the pow function
 	std::cout << pow(2, 3) << std::endl;
 
+    return 0;
 }
 
 /*
@@ -284,8 +293,10 @@ Output:
 int main() {
 
 	int first_no = 5, second_no = 8;
-	std::cout << "The first number is " << first_no << " and the second is " << second_no << std::endl;
+	std::cout << "The first number is " << first_no << " and the second is "
+    << second_no << std::endl;
 
+    return 0;
 }
 
 /*
@@ -399,11 +410,13 @@ int main() {
     //Pop last
     std::string item_to_remove = items.back();
     items.pop_back();
-    std::cout << item_to_remove << " has been pop removed from the end of the list" << std::endl;
+    std::cout << item_to_remove << " has been pop removed from the end of "
+    "the list" << std::endl;
 
     //Remove by value
     items.erase(std::remove(items.begin(), items.end(), "item3"), items.end());
-    std::cout << "The first (only) instance of item3 has been removed from the list" << std::endl;
+    std::cout << "The first (only) instance of item3 has been removed from the "
+    "list" << std::endl;
 
     //Del by position
     items.erase(items.end() - 1);
@@ -519,7 +532,8 @@ int main() {
 
     // Loop through and display each item
     for (size_t i = 0; i < items.size(); ++i) {
-        std::cout << "Item " << i << " in the list is " << items[i] << std::endl;
+        std::cout << "Item " << i << " in the list is " << items[i]
+        << std::endl;
     }
     // Display a message after the loop
     std::cout << "That is the contents of items" << std::endl;
@@ -550,7 +564,8 @@ int main() {
         std::cout << value << " is within 1-4" << std::endl;
     }
     // Display a message after the loop
-    std::cout << "All other values (including 4) are not within 1-4 range"<< std::endl;
+    std::cout << "All other values (including 4) are not within 1-4 range"
+    << std::endl;
 
     return 0;
 }
@@ -584,13 +599,16 @@ int main() {
     std::cout << std::endl;
 
     // Select the lowest value
-    std::cout << "The lowest value is: " << *std::min_element(values.begin(), values.end()) << std::endl;
+    std::cout << "The lowest value is: "
+    << *std::min_element(values.begin(), values.end()) << std::endl;
 
     // Select the highest value
-    std::cout << "The highest value is: " << *std::max_element(values.begin(), values.end()) << std::endl;
+    std::cout << "The highest value is: "
+    << *std::max_element(values.begin(), values.end()) << std::endl;
 
     // Show total sum of values in list
-    std::cout << "The total sum is: " << std::accumulate(values.begin(), values.end(), 0) << std::endl;
+    std::cout << "The total sum is: "
+    << std::accumulate(values.begin(), values.end(), 0) << std::endl;
 
     // Create list of even numbers between 1 and 10
     std::vector<int> even_values;
